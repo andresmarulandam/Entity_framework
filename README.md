@@ -24,3 +24,12 @@
 
 1. Crear un archivo terminado en context.cs en este caso TareaContext.cs
 2. En ese archivo se hará la configuración de Entity Framework
+
+# Mapeo de modelos usando atributos
+
+1. Dentro de los models: con los data notacion o atributos como key se sabe que categoriaId sera la primary key
+
+- [ForeignKey("CategoriaId")]
+- [Required]
+- [MaxLength(200)]
+- [NotMapped]: Se genera en memoria y no en la base de datos
