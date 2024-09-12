@@ -19,3 +19,8 @@
 
 1. Crear carpeta en la raíz llamada Models
 2. Dentro de la carpeta Models crear un archivo llamado Categoria.cs
+
+# Configuración de Entity Framework
+
+1. Crear un archivo terminado en context.cs en este caso TareaContext.cs
+2. En ese archivo se hará la configuración de Entity Framework
