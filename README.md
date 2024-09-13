@@ -33,3 +33,11 @@
 - [Required]
 - [MaxLength(200)]
 - [NotMapped]: Se genera en memoria y no en la base de datos
+
+# Utilizando base de datos en memoria
+
+1. Ir a Program.cs donde estará la configuración del proyecto
+2. Para generar la base de datos en memoria por medio de Entity Framework.
+3. En terminal: dotnet build
+4. En terminal dotnet run
+5. En postman, probar con el local host que salga en el terminal mas /dbconexion
