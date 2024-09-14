@@ -68,3 +68,14 @@
 2. En consola: dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.8
 3. dotnet ef migrations add InitialCreate
 4. dotnet ef database update
+
+- Para un cambio:
+  dotnet ef migrations add ColumnPesoCategoria
+  dotnet ef database update
+
+# Agregando datos semilla
+
+1. En TareasContext: Crear una nueva colección
+2. Buscar en google pagina para generar un guid identificator
+3. dotnet ef migrations add InitialData
+4. dotnet ef database update
