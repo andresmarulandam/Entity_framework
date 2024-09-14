@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
 
 // Conexión a sqlserver usando la seguridad de Windows
-builder.Services.AddSqlServer<TareasContext>("Data Source=PERSONAL; Initial Catalog= TareasDb;Trusted_Connection=True; Integrated Security=True;Encrypt=false");
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("conexionTareas"));
 
 var app = builder.Build();
 

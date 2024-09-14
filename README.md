@@ -47,3 +47,8 @@
 1. Configurar AddSqlServer para conectar a la base de datos a SQLServer en el Program.cs
 2. En este caso yo usé la configuración de seguridad de Windows
 3. dotnet new gitignore
+
+# Agregando conexión al archivo appsettings
+
+1. En el archivo appsettings.json colocar: ConnectionStrings y pasar la linea de conexion a la db.
+2. Luego en Program.cs : builder.Configuration.GetConnectionString("conexionTareas")
