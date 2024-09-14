@@ -52,3 +52,10 @@
 
 1. En el archivo appsettings.json colocar: ConnectionStrings y pasar la linea de conexion a la db.
 2. Luego en Program.cs : builder.Configuration.GetConnectionString("conexionTareas")
+
+# Fluent API:
+
+- Gracias a Fluent API puedo utilizar todo el código fuente en inglés y especificar todas las tablas y campos de la base de datos en español.
+- Forma avanzada de configuración sin utilizar atributos o data-annotations, usando funciones de extensión anidadas en objetos de tabla, columnas durante el mapeo de los datos
+
+1. En TareasContext.cs: sobreescribir el modelo de Categoria y Tarea
