@@ -59,3 +59,12 @@
 - Forma avanzada de configuración sin utilizar atributos o data-annotations, usando funciones de extensión anidadas en objetos de tabla, columnas durante el mapeo de los datos
 
 1. En TareasContext.cs: sobreescribir el modelo de Categoria y Tarea
+
+# Migraciones:
+
+- Es un registro/bitácora donde se visualizan los cambios realizados a elemento(s) de la base de datos.
+
+1. En consola:dotnet tool install --global dotnet-ef
+2. En consola: dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.8
+3. dotnet ef migrations add InitialCreate
+4. dotnet ef database update
