@@ -41,3 +41,9 @@
 3. En terminal: dotnet build
 4. En terminal dotnet run
 5. En postman, probar con el local host que salga en el terminal mas /dbconexion
+
+# Conectado a base de datos SQL server
+
+1. Configurar AddSqlServer para conectar a la base de datos a SQLServer en el Program.cs
+2. En este caso yo usé la configuración de seguridad de Windows
+3. dotnet new gitignore

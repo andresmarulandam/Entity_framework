@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
+//Conexión base de datos en memoria:
+// builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
+
+// Conexión a sqlserver usando la seguridad de Windows
+builder.Services.AddSqlServer<TareasContext>("Data Source=PERSONAL; Initial Catalog= TareasDb;Trusted_Connection=True; Integrated Security=True;Encrypt=false");
 
 var app = builder.Build();
 
