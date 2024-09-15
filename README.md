@@ -93,8 +93,16 @@
 2.  dotnet run en consola
 3.  probar en postman el endpoint con metodo post y el body:
     {
-            "categoriaId": "0310a074-0396-40ce-938e-6cea671585b0",
-            "titulo": "Estudiar",
-            "descripcion": null,
-            "prioridadTarea": 2
+    "categoriaId": "0310a074-0396-40ce-938e-6cea671585b0",
+    "titulo": "Estudiar",
+    "descripcion": null,
+    "prioridadTarea": 2
     }
+
+# Actualizando datos con Entity framework
+
+1.  En Program.cs agregar el APP.mapPUT para actualizar los datos
+
+# Eliminando datos con Entity framework
+
+1. En Program.cs agregar el APP.mapDelete para eliminar los datos
