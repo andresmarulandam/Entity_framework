@@ -79,3 +79,10 @@
 2. Buscar en google pagina para generar un guid identificator
 3. dotnet ef migrations add InitialData
 4. dotnet ef database update
+
+# Obteniendo datos con Entity Framework
+
+1. En Program.cs agregar el app.mapget para la ruta para obtener las tareas
+2. dotnet run en consola
+3. probar el postman el endpoint
+4. pasar jsonIgnore en el modelo de categoria
