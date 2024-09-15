@@ -84,5 +84,17 @@
 
 1. En Program.cs agregar el app.mapget para la ruta para obtener las tareas
 2. dotnet run en consola
-3. probar el postman el endpoint
+3. probar en postman el endpoint
 4. pasar jsonIgnore en el modelo de categoria
+
+# Guardando datos con Entity framework
+
+1.  En Program.cs agregar el APP.mapPost para crear y guardar los datos
+2.  dotnet run en consola
+3.  probar en postman el endpoint con metodo post y el body:
+    {
+            "categoriaId": "0310a074-0396-40ce-938e-6cea671585b0",
+            "titulo": "Estudiar",
+            "descripcion": null,
+            "prioridadTarea": 2
+    }
